@@ -32,6 +32,7 @@ Install anaconda
 https://www.continuum.io/downloads#windows
 
 https://www.tensorflow.org/install/install_windows
+
     conda install Pillow
     conda install -c anaconda scipy=0.19.0
     conda install scikit-learn
