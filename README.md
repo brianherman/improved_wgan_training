@@ -32,7 +32,7 @@ Install anaconda
 https://www.continuum.io/downloads#windows
 
 
-## Install tensorflow with GPU Support
+# Install tensorflow with GPU Support
     Install tensorflow
     Requirements to run TensorFlow with GPU support
 
