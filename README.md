@@ -31,18 +31,8 @@ download URL is in the file.
 Install anaconda
 https://www.continuum.io/downloads#windows
 
+https://www.tensorflow.org/install/install_windows
 
-## Install tensorflow with GPU Support
-    Install tensorflow
-    Requirements to run TensorFlow with GPU support
-
-    If you are installing TensorFlow with GPU support using one of the mechanisms described in this guide, then the following NVIDIA software must be installed on your system:
-
-    CUDA® Toolkit 8.0. For details, see NVIDIA's documentation Ensure that you append the relevant Cuda pathnames to the %PATH% environment variable as described in the NVIDIA documentation.
-    The NVIDIA drivers associated with CUDA Toolkit 8.0.
-    cuDNN v5.1. For details, see NVIDIA's documentation. Note that cuDNN is typically installed in a different location from the other CUDA DLLs. Ensure that you add the directory where you installed the cuDNN DLL to your %PATH% environment variable.
-    GPU card with CUDA Compute Capability 3.0 or higher. See NVIDIA documentation for a list of supported GPU cards.
-    
     conda install Pillow
     conda install -c anaconda scipy=0.19.0
     conda install scikit-learn
