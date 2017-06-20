@@ -14,7 +14,7 @@ import tflib.plot
 
 # Download Google Billion Word at http://www.statmt.org/lm-benchmark/ and
 # fill in the path to the extracted files here!
-DATA_DIR = ''
+DATA_DIR = 'data'
 if len(DATA_DIR) == 0:
     raise Exception('Please specify path to data directory in gan_language.py!')
 
@@ -177,7 +177,7 @@ with tf.Session() as session:
                 lm = language_helpers.NgramLanguageModel(i+1, samples, tokenize=False)
                 lib.plot.plot('js{}'.format(i+1), lm.js_with(true_char_ngram_lms[i]))
 
-            with open('samples_{}.txt'.format(iteration), 'w') as f:
+            with open('samples_{}.txt'.format(iteration), 'w', encoding="utf-8") as f:
                 for s in samples:
                     s = "".join(s)
                     f.write(s + "\n")
